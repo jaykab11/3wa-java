@@ -1,4 +1,4 @@
-package com.evorra.backend.model.dao.account;
+package com.3wa.javacourse.model.ClassRoom;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
