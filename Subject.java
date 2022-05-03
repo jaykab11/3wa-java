@@ -1,4 +1,5 @@
-package com.evorra.backend.model.dao.account;
+package com.3wa.javacourse.model.Subject;
+
 
 import java.util.List;
 
