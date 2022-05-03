@@ -1,4 +1,4 @@
-package com.3wa.javacourse.model.ClassRoom;
+package com.3wa.javacourse.model.Teacher;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
