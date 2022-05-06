@@ -25,7 +25,7 @@ public class Advice {
             errorDTO.setStatus( HttpStatus.BAD_REQUEST.name() );
             errorDTO.setTime(new Date().toString());
 
-            return new ResponseEntity<ErrorDTO>(errorDTO,HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(errorDTO,HttpStatus.BAD_REQUEST);
         }
 
 
