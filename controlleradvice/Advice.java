@@ -1,5 +1,3 @@
-package com.evorra.backend.controller;
-
 import java.util.Date;
 
 import org.springframework.http.HttpStatus;
@@ -22,12 +20,11 @@ public class Advice {
         public ResponseEntity<ErrorDTO> generateNotFoundException(StudentRegistrationFailedException ex) {
             ErrorDTO errorDTO = new ErrorDTO();
             errorDTO.setMessage(ex.getMessage());
-            errorDTO.setStatus( HttpStatus.BAD_REQUEST.name() );
+            errorDTO.setStatus( ex.getStatus().name() );
             errorDTO.setTime(new Date().toString());
 
-            return new ResponseEntity<>(errorDTO,HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>( errorDTO, HttpStatus.BAD_REQUEST );
         }
 
 
 }
-
